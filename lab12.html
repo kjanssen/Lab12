@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lab 12</title>
+  <title>CS 355 Spring 2014</title>
+
+  <link rel="shortcut icon" href="../../kj_icon.ico">
+
+  <style>
+    body {background-color:#222222;}
+    #header, #menu, #content, #footer {padding:10px;}
+    #container {background-color:#FFD700; width:800px; margin-left:auto; margin-right:auto;}
+    #header {background-color:#FFA500;}
+    #menu {width:160px; float:left;}
+    #content {background-color:#EEEEEE; margin-left:180px;}
+    #footer {background-color:#FFA500; clear:both; text-align:center;}
+
+    table, th, td {border:1px solid black; border-collapse: collapse;}
+    th {text-align:left;}
+    th, td {padding-left:10px; padding-right:20px;}
+    
+  </style>
 </head>
 <body>
-  <h1>CS355 Lab 12 - HTML 101</h1>
 
-  <p>Hello, World!</p>
+<div id="container">
 
-  <p><strong>Hello, World in Bold!</strong></p>
+  <div id="header">
+    <img src="http://www.cs.sonoma.edu/~haderman/cs355/assignments/cs355lab13.png" alt="CS 355 Header">
+  </div>
 
-  <p><em>Hello, World in Italics!</em></p>
+  <div id="menu">
+    <b>Menu</b><br>
+    <a href="http://github.com/kjanssen/Lab12">Course GitHub Repo</a><br>
+    <a href="http://www.cs.sonoma.edu/~haderman/cs355/">Course Website</a><br>
+    <a href="http://www.cs.sonoma.edu/">SSU CS Department</a></div>
+  
+  <div id="content">
+    <table>
+      <tr>
+	<th>Number</th>
+	<th>Name</th>
+	<th>Professor</th>
+      </tr>
+      <tr>
+	<td>CS 330</td>
+	<td>Intro to Game Programming</td>
+	<td>Watts</td>
+      </tr>
+      <tr>
+        <td>CS 355</td>
+        <td>Database Mgt System Design</td>
+        <td>Haderman</td>
+      </tr><tr>
+        <td>CS 415</td>
+        <td>Algorithm Analysis</td>
+        <td>Ledin</td>
+      </tr><tr>
+        <td>CS 480</td>
+        <td>Artificial Intelligence</td>
+        <td>Ravikumar</td>
+      </tr>
+    </table>
 
-  <p><a href="http://www.cs.sonoma.edu">Sonoma CS Department Website</a></p>
+    <p>Top three things I've learned:</p>
+    <ol>
+      <li>Android Development</li>
+      <li>Object Oriented Programming</li>
+      <li>Computer Architecture</li>
+    </ol>
+
+    <p>Three things I want to learn:</p>
+    <ul>
+      <li>How to integrate database operations into my programming</li>
+      <li>Familiarity with full stack development (i.e. where is this code running?)</li>
+      <li>Mastery of command line tools/vim</li>
+    </ul>
+  </div>
+  
+  <div id="footer">
+    Copyright © W3Schools.com</div>
+  
+</div>
+
 </body>
 </html>
+
+
+
