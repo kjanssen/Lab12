@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>kjanssen's Homepage</title>
+<link rel="shortcut icon" href="http://www.kylejanssen.com/kj_icon.ico" />
+<link rel="stylesheet" type="text/css" href="kjanssen.css" />
+<style>
+
+#leftbar ul {
+  padding-left: 15px;
+  list-style-type: square; }
+
+#customers {
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#customers th {
+    font-size: 1.4em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #FFF;
+}
+
+#customers td, #customers th {
+    font-size: 1.2em;
+    border: 1px solid #98BF21;
+    padding: 3px 7px 2px;
+}
+
+#customers tr.alt td {
+    color: #000;
+    background-color: #EAF2D3;
+}
+
+#happy {
+    width: 640px;
+    height: auto;
+    border: 2px solid black;
+    display: none;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>kjanssen</h1>
+  </div>
+
+  <div id="leftbar" style="border-right: 4px solid #7aad12;">
+    <h3>Menu</h3>
+    <ul>
+      <li><a href="http://github.com/kjanssen/Lab12">Course GitHub Repo</a></li>
+      <li><a href="http://www.cs.sonoma.edu/~haderman/cs355/">Course Website</a></li>
+      <li><a href="http://www.cs.sonoma.edu/">SSU CS Department</a></li>
+      <li><a href="http://kylejanssen.com/">My Homepage</a></li>
+    </ul>
+  </div>
+  
+  <div id="content">
+
+    <h2>Kyle Janssen's CS 355 Homepage</h2>
+    <p>
+      You found me. I am currently a junior at Sonoma State University studying computer science. In addition to
+      programming, I enjoy hiking and making things out of wood. This is the page for my Databases class.
+    </p>
+    <ul>
+      <li>Lab 12 test page: <a href="cs355/Lab12/lab12.html">CS 355</a></li>
+    </ul>
+
+    <br>
+    <h3>A Table!</h3>
+
+    <p>And it conveniently matches my color scheme.</p>
+
+    <table id="customers">
+      <tbody>
+	<tr>
+	  <th>Company</th>
+	  <th>Contact</th>
+	  <th>Country</th>
+	</tr>
+	<tr>
+	  <td>Alfreds Futterkiste</td>
+	  <td>Maria Anders</td>
+	  <td>Germany</td>
+	</tr>
+	<tr class="alt">
+	  <td>Berglunds snabbköp</td>
+	  <td>Christina Berglund</td>
+	  <td>Sweden</td>
+	</tr>
+	<tr>
+	  <td>Centro comercial Moctezuma</td>
+	  <td>Francisco Chang</td>
+	  <td>Mexico</td>
+	</tr>
+	<tr class="alt">
+	  <td>Ernst Handel</td>
+	  <td>Roland Mendel</td>
+	  <td>Austria</td>
+	</tr>
+	<tr>
+	  <td>Island Trading</td>
+	  <td>Helen Bennett</td>
+	  <td>UK</td>
+	</tr>
+	<tr class="alt">
+	  <td>Königlich Essen</td>
+	  <td>Philip Cramer</td>
+	  <td>Germany</td>
+	</tr>
+	<tr>
+	  <td>Laughing Bacchus Winecellars</td>
+	  <td>Yoshi Tannamuri</td>
+	  <td>Canada</td>
+	</tr>
+	<tr class="alt">
+	  <td>Magazzini Alimentari Riuniti</td>
+	  <td>Giovanni Rovelli</td>
+	  <td>Italy</td>
+	</tr>
+	<tr>
+	  <td>North/South</td>
+	  <td>Simon Crowther</td>
+	  <td>UK</td>
+	</tr>
+	<tr class="alt">
+	  <td>Paris spécialités</td>
+	  <td>Marie Bertrand</td>
+	  <td>France</td>
+	</tr>
+	<tr>
+	  <td>The Big Cheese</td>
+	  <td>Liz Nixon</td>
+	  <td>USA</td>
+	</tr>
+	<tr class="alt">
+	  <td>Vaffeljernet</td>
+	  <td>Palle Ibsen</td>
+	  <td>Denmark</td>
+	</tr>
+      </tbody>
+    </table>
+
+    <br>
+    <h3>Okay, now something exciting</h3>
+
+    <button id="JSButton">Click Me! (JS)</button>
+    <button id="JQButton">Click Me! (jQuery)</button>
+    
+    <script>
+      document.getElementById("JSButton").onclick =
+      function showOrHide() {
+          var display = document.getElementById("happy").style.display
+          console.log(display);
+
+          if (display === "none" || display === "") {
+              document.getElementById("happy").style.display = "initial";
+          } else {
+              document.getElementById("happy").style.display = "none";
+          }
+      }
+    </script>
+
+    <script>
+      
+      $("#JQButton").click(function() { $("#happy").toggle(); });
+
+    </script>
+
+    <p><img src="happy-people.png" alt="Happy people" id="happy"></p>
+
+  </div>
+  
+  <div id="footer">
+    <h4>Kyle Janssen's Homepage</h4>
+  </div>
+</div>
+</body>
+</html>
